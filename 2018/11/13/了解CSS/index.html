@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>My Blog</title>
+    <title>了解CSS · My Blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -77,6 +77,8 @@
 
     <link rel="preload" href="/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="/css/mobile.css?v=20180824" media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
@@ -201,14 +203,23 @@
 </head>
 
     
-        <body class="home-body">
+        <body class="post-body">
     
     
-<header class="header index-header">
+<header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/">Blog.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">了解CSS</a>
+            </div>
+    </div>
     
     <a class="home-link" href="/">Blog.</a>
 </header>
@@ -227,17 +238,17 @@ height:50vh;
     <!-- 主页  -->
     
     
-    <!-- 文章页  -->
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/index-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            Blog.
-            <!-- 文章页  -->
+            了解CSS
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
@@ -245,12 +256,43 @@ height:50vh;
             <!-- 主页副标题  -->
             
             
-                学习就是不断进步的过程,而把自己学习到的东西不断地记录,是检验自身的过程,努力吧!!!
-            
-            <!-- 文章页  -->
+            <!-- 404 -->
             
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">583</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2018/11/13</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -351,348 +393,84 @@ height:50vh;
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2018/11/13/了解CSS/">
-            
-                <span>了解CSS</span>
-        </a>
-        <div class="abstract-content">
-            #了解CSS 
-1.CSS 指层叠样式表 (Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化。 
+            <main class="main post-page">
+    <article class="article-entry">
+        <p>#了解CSS </p>
+<p>1.CSS 指层叠样式表 (Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化。 </p>
+<ul>
+<li>语法：</li>
+</ul>
+<p><img src="http://www.runoob.com/wp-content/uploads/2013/07/632877C9-2462-41D6-BD0E-F7317E4C42AC.jpg" alt="avatar"></p>
+<ul>
+<li><p>CSS声明总是以分号(;)结束，声明组以大括号({})括起来:<br>实例：<br>@[p| {|color: red;|text-align: center;|}]<br>p<br>{<br>color: red;<br>text-align: center;<br>}</p>
+</li>
+<li><p>CSS 注释<br>注释是用来解释你的代码，并且可以随意编辑它，浏览器会忽略它。<br>CSS注释以 “/<em>“ 开始, 以 “</em>/“ 结束, 实例如下:</p>
+</li>
+</ul>
+<blockquote>
+<p>/<em> 这是个注释</em>/<br>p<br>{<br>text-align:center;<br>/<em> 这是另一个注释</em>/<br>color:black;<br>font-family:arial;<br>}</p>
+</blockquote>
+<ul>
+<li>如何插入样式表</li>
+</ul>
+<p>1.外部样式表(External style sheet)</p>
+<p>当样式需要应用于很多页面时，外部样式表将是理想的选择。在使用外部样式表的情况下，你可以通过改变一个文件来改变整个站点的外观。每个页面使用 &lt; link&gt; 标签链接到样式表。 &lt; link&gt; 标签在（文档的）头部：</p>
+<blockquote>
+<p>&lt; head&gt;<br>&lt; link rel=”stylesheet” type=”text/css” href=”mystyle.css”&gt;<br>&lt; /head&gt;</p>
+</blockquote>
+<p>2.内部样式表</p>
+<p>当单个文档需要特殊的样式时，就应该使用内部样式表。你可以使用 &lt; style&gt; 标签在文档头部定义内部样式表，就像这样:</p>
+<blockquote>
+<p>&lt; head&gt;<br>&lt; style&gt;<br>hr {color:sienna;}<br>p {margin-left:20px;}<br>body {background-image:url(“images/back40.gif”);}<br>&lt; /style&gt;<br>&lt; /head&gt;</p>
+</blockquote>
+<p>3.内联样式</p>
+<p>由于要将表现和内容混杂在一起，内联样式会损失掉样式表的许多优势。请慎用这种方法，例如当样式仅需要在一个元素上应用一次时,要使用内联样式，你需要在相关的标签内使用样式（style）属性。Style 属性可以包含任何 CSS 属性。本例展示如何改变段落的颜色和左外边距：</p>
+<p>&lt; p style=”color:sienna;margin-left:20px”&gt;这是一个段落。&lt; /p&gt;</p>
+<ul>
+<li>学习资源<br>1.Google: 关键词 MDN<br>2.<a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS Tricks</a><br>3.<a href="https://www.google.com/search?q=%E9%98%AE%E4%B8%80%E5%B3%B0+css" target="_blank" rel="noopener">Google: 阮一峰 css</a><br>4.<a href="https://www.zhangxinxu.com/wordpress/category/css/page/25/" target="_blank" rel="noopener">张鑫旭的 240 多篇 CSS 博客</a><br>5.<a href="https://tympanus.net/codrops/category/playground/" target="_blank" rel="noopener">Codrops 炫酷 CSS 效果</a><br>6.<a href="http://www.ituring.com.cn/book/1695" target="_blank" rel="noopener">CSS揭秘</a><br>7.<a href="http://cndevdocs.com/" target="_blank" rel="noopener">CSS 2.1 中文 spec</a><br>8.<a href="http://adamschwartz.co/magic-of-css/" target="_blank" rel="noopener">Magic of CSS 免费在线书</a></li>
+</ul>
 
-语法：
-
-
-
-CSS声明总是以分号(;)结束，声明组以大括号({})括起来:实例：@[p| {|color: red;|text-align: center;|}]p{color: red;text-align: center;}
-
-CSS 注释注释是用来解释你的代码，并且可以随意编辑它，浏览器会忽略...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/11/13</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
     </article>
+    <!-- license  -->
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2018/11/04/HTML几个常用标签/">
-            
-                <span>HTML简介（几个常用标签）</span>
-        </a>
-        <div class="abstract-content">
-            HTML简介（几个常用标签）
-HTML 是用来描述网页的一种语言。
-
-HTML 指的是超文本标记语言: Hyper Text Markup Language
-HTML 不是一种编程语言，而是一种标记语言
-标记语言是一套标记标签 (markup tag)
-HTML 使用标记标签来描述网页
-HTML 文档包含了HTML 标签及文本内容
-HTML文档也叫做 web 页面
-
-
-HTML标签总结(常用)
-文档章节标签body 呈现给用户header 头部nav 导航aside 和主要内容不相关的区域article 相邻独立可重复主体section 文档中的区域footer 尾部hx h1-h6 标...
+        <div class="license-wrapper">
+            <p>原文作者：<a href="http://yoursite.com">xvyabin</a>
+            </p><p>原文链接：<a href="http://yoursite.com/2018/11/13/了解CSS/">http://yoursite.com/2018/11/13/了解CSS/</a>
+            </p><p>发表日期：<a href="http://yoursite.com/2018/11/13/了解CSS/">November 13th 2018, 10:09:50 am</a>
+            </p><p>更新日期：<a href="http://yoursite.com/2018/11/13/了解CSS/">November 13th 2018, 10:11:35 am</a>
+            </p><p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/11/04</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2018/10/30/HTTP入门/">
-            
-                <span>HTTP入门</span>
-        </a>
-        <div class="abstract-content">
-            HTTP入门
-超文本传输协议（HTTP，HyperText Transfer Protocol)是互联网上应用最为广泛的一种网络协议。所有的WWW文件都必须遵守这个标准。设计HTTP最初的目的是为了提供一种发布和接收HTML页面的方法。1960年美国人Ted Nelson构思了一种通过计算机处理文本信息的方法，并称之为超文本（hypertext）,这成为了HTTP超文本传输协议标准架构的发展根基。Ted Nelson组织协调万维网协会（World Wide Web Consortium）和互联网工程工作小组（Internet Engineering Task Force ）共同合作研究，...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/10/30</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2018/10/27/命令行基础使用/">
-            
-                <span>命令行基础使用</span>
-        </a>
-        <div class="abstract-content">
-            命令行基础使用
-命令行是每一个开发者都会频繁使用的，与Windows图形界面所不同的是，命令行操作都是靠命令来执行的。下面列举了一些常用的一些命令，例如增删改查。
-
-基础命令介绍
-
-
-
-
-命令
-全写
-缩写
-
-
-
-
-创建目录
-make directory
-mkdir
-
-
-删除
-remove
-rm
-
-
-移动/重命名
-move
-mv
-
-
-复制
-copy
-cp
-
-
-罗列
-list
-ls
-
-
-改变目录
-change
-directory
-
-
-
-有些命令后面可以增加参数，达到不同目的。例如ls，表示列出目录下内容，常用参数有ls -a,ls -l,ls -la。ls -a表示列出目录下所有内容，包括以...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/10/27</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2018/10/24/git使用教程/">
-            
-                <span>git使用教程</span>
-        </a>
-        <div class="abstract-content">
-            git使用教程
-Git是一个分布式版本控制系统，最初是由林纳斯·托瓦兹创作。Github是一个基于Git的项目托管平台
-
-Git的安装Windows上需要安装Git Bash，可直接从官网下载或者各镜像网站下载安装Linux只须运行 sudo apt-get install git 命令即可Mac上需要通过 homebrew 或者 Xcode 安装
-Git的初使用在使用Git之前，我们需要先进行一些简单设置，目的是首先表明身份。
-
-git config –global user.name 你的英文名git config –global user.email 你的邮箱git config ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/10/24</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2018/10/24/开博大吉/">
-            
-                <span>开博大吉</span>
-        </a>
-        <div class="abstract-content">
-            
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/10/24</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2018/10/24/hello-world/">
-            
-                <span>Hello World</span>
-        </a>
-        <div class="abstract-content">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-More info: Writing
-Run server1$ hexo server
-More...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/10/24</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
     
     <!-- paginator  -->
-    
-</main>
-            <!-- profile -->
+    <ul class="post-paginator">
+        <li class="next">
             
-            <div class="profile">
-    <img class="profile-avatar" alt="avatar" src="/avatar/Misaka.jpg">
-    <div class="profile-name">xvyabin</div>
-    
-    <div class="profile-signature">
-        witness me
-    </div>
-    
-    
-    <div class="profile-social">
-        
-    
-        
+        </li>
+        <li class="previous">
             
-                <a href="mailto:792134478@qq.com" class="iconfont-archer email" title="email"></a>
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/2018/11/04/HTML几个常用标签/" title="HTML简介（几个常用标签）">
+                    <div class="prevTitle">HTML简介（几个常用标签）</div>
+                </a>
             
-        
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
-        
-            
-                <a href="//github.com/xvyabin" class="iconfont-archer github" target="_blank" title="github"></a>
-            
-        
     
-        
-            
-                <span class="iconfont-archer wechat" title="wechat">
-                  
-                  <img class="profile-qr" src="/assets/example_qr.png">
-                </span>
-            
-        
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
     
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
     
 
-    </div>
-    
-    
-        <div class="friends">
-            <div>FRIENDS</div>
-            
-                
-                    <span>
-                        <a href="//www.baidu.com" target="_black">friendA</a>
-                    </span>
-                
-            
-                
-                    <span>
-                        <a href="//www.google.com" target="_black">friendB</a>
-                    </span>
-                
-            
-                
-            
-        </div>
-    
-    
-        <div class="about-me">
-            <a href="/about">ABOUT ME</a>
-        </div>
-    
-</div>
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
             
         </div>
         <footer class="footer footer-unloaded">
@@ -775,6 +553,24 @@ More...
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -1017,6 +813,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>
