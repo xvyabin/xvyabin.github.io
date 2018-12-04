@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Hello World · My Blog</title>
+    <title>javascript的数据类型 · My Blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -217,7 +217,7 @@
                 <a href="/">Blog.</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">Hello World</a>
+                <a href="#" class="post-name">javascript的数据类型</a>
             </div>
     </div>
     
@@ -247,7 +247,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            Hello World
+            javascript的数据类型
             <!-- 404 -->
             
         </h1>
@@ -266,7 +266,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">73</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">1k</span>阅读时长: <span class="post-count reading-time">3 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -395,24 +395,101 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h2 id="javascript的数据类型"><a href="#javascript的数据类型" class="headerlink" title="javascript的数据类型"></a>javascript的数据类型</h2><h3 id="javascript的历史"><a href="#javascript的历史" class="headerlink" title="javascript的历史"></a>javascript的历史</h3><p>JavaScript 因为互联网而生，紧跟着浏览器的出现而问世。回顾它的历史，就要从浏览器的历史讲起。</p>
+<p>基本语法：借鉴 C 语言和 Java 语言。<br>数据结构：借鉴 Java 语言，包括将值分成原始值和对象两大类。<br>函数的用法：借鉴 Scheme 语言和 Awk 语言，将函数当作第一等公民，并引入闭包。<br>原型继承模型：借鉴 Self 语言（Smalltalk 的一种变种）。<br>正则表达式：借鉴 Perl 语言。<br>字符串和数组处理：借鉴 Python 语言。</p>
+<p>####数据类型</p>
+<p>js有7种数据类型：数字（number）；字符串（string）；布尔（boolean）；字符（symbol）；null；undefined；对象（object）；</p>
+<p>####1.number<br>十进制：<br>1表示整数，0.123或 .123表示小数，还可以1.23e2的2此方表示。</p>
+<p>八进制：<br>字面值第一位必须是零（0），然后八进制数字序列（0-7）. 如果字面值数值超出范围，前导零忽略，和面当做十进制解析</p>
+<p>二进制：<br>以0b开头，0b大小写无所谓。</p>
+<p>十六进制：<br>十六进制（简写为hex或下标16）在数学中是一种逢16进1的进位制。一般用数字0到9和字母A到F（或a~f）表示，其中:A~F表示10~15，这些称作十六进制数字。</p>
+<p>####2.字符串（string）<br>String即字符串类型，只要是被单引号（‘’）或者双引号（“”）引起来的类型就是String类型<br>示例：</p>
+<blockquote>
+<p>var leng= “你好”<br>  var leng= ‘你好’   </p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>转义字符</th>
+<th style="text-align:center">意义</th>
+<th style="text-align:right">ASCII码值（十进制）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\’</td>
+<td style="text-align:center">代表一个单引号（撇号）字符</td>
+<td style="text-align:right">039</td>
+</tr>
+<tr>
+<td>\”</td>
+<td style="text-align:center">代表一个双引号字符</td>
+<td style="text-align:right">034</td>
+</tr>
+</tbody>
+</table>
+<p>多行字符串<br>字符串相加这是最容易理解也很常用的一种形式或者以下方\或`换行写法（\ `要注意空格）：</p>
+<blockquote>
+<p>var a =”123456<br>              56789” //报错</p>
+</blockquote>
+<blockquote>
+<p>var a =”123456 \<br>  56789”   //正确         </p>
+</blockquote>
+<blockquote>
+<p>var a = “123456” +<br>            “56789”  //或者</p>
+</blockquote>
+<blockquote>
+<p>var a =`123456<br>56789`//反引号写法    </p>
+</blockquote>
+<p>####3.boolean(布尔)</p>
+<p>Boolean类型只有两个字面值：true和false，虽然Boolean类型字面值只有两个，但ECMAScript中所有类型都有与这两个Boolean值等价的值。</p>
+<p>&amp;&amp; 与|| 两个运算符<br>列：<br>a &amp;&amp; b //两个满足真的的情况才为真<br>a || b  //一方满足真的情况为真</p>
+<p>####4.字符（symbol）<br>Symbol函数前不能使用new命令，否则会报错。这是因为生成的Symbol是一个原始类型的值，不是对象</p>
+<p>Symbol函数可以接受一个字符串作为参数，表示对Symbol实例的描述，主要是为了在控制台显示，或者转为字符串时，比较容易区分。</p>
+<p>####5.null与undefined<br>null类型只有一个值：Null<br>undefined类型只有一个值： undefined<br>这两个值的意思：什么都没有。<br>在javascript中，一个变量没有值就是-undefined</p>
+<p><img src="./28f56b6045f67ffcffc8e7dae2a72df.png" alt="Alt text"></p>
+<p>####6.对象(object)<br>对象（object）是 JavaScript 语言的核心概念，也是最重要的数据类型。</p>
+<p>什么是对象？简单说，对象就是一组“键值对”（key-value）的集合，是一种无序的复合数据集合。</p>
+<blockquote>
+<p>var obj ={<br>    a : “hello”,<br>   b : “world”<br>} ;</p>
+</blockquote>
+<p>对象的所有键名都是字符串（ES6 又引入了 Symbol 值也可以作为键名），所以加不加引号都可以。</p>
+<p>如果键名不符合标识名的条件（比如第一个字符为数字，或者含有空格或运算符），且也不是数字，则必须加上引号，否则会报错。</p>
+<blockquote>
+<p>var object ={<br>       2c : 1<br>};//报错<br>var object ={<br>      “2c”: 1<br>};//不报错</p>
+</blockquote>
+<p>对象里面也可以有对象</p>
+<blockquote>
+<p>var  person = {<br>       a:{ age:18 }<br>}<br>person[ ‘a’ ] 等价于 person.a</p>
+</blockquote>
+<p><code>delete</code> 可以删除key</p>
+<blockquote>
+<p>var  person = {<br>       a:{ age:18 }<br>}<br>delete person[ ‘a’ ]  //删除a</p>
+</blockquote>
+<p><code>in</code> 判断对象是否为数组/对象的元素/属性<br>格式：（变量 in 对象）……注意，，，当“对象”为数组时，“变量”指的是数组的“索引”；当“对象”为对象是，“变量”指的是对象的“属性”。</p>
+<blockquote>
+<p>var  person = {<br>       a:{ age:18 }<br>}<br>a  in  person  //ture</p>
+</blockquote>
+<p><code>for...in</code>循环用来遍历一个对象的全部属性。</p>
+<blockquote>
+<p>var obj = {a: 1, b: 2, c: 3};</p>
+</blockquote>
+<blockquote>
+<p><code>for</code> (var i <code>in</code>obj) {<br>  console.log(‘键名：’, i);<br>  console.log(‘键值：’, obj[i]);<br>}<br>// 键名： a<br>// 键值： 1<br>// 键名： b<br>// 键值： 2<br>// 键名： c<br>// 键值： 3</p>
+</blockquote>
+<p><code>with</code>语句</p>
+<blockquote>
+<p>with (对象) {<br>  语句;<br>}</p>
+</blockquote>
 
     </article>
     <!-- license  -->
     
         <div class="license-wrapper">
             <p>原文作者：<a href="http://yoursite.com">xvyabin</a>
-            </p><p>原文链接：<a href="http://yoursite.com/2018/10/24/hello-world/">http://yoursite.com/2018/10/24/hello-world/</a>
-            </p><p>发表日期：<a href="http://yoursite.com/2018/10/24/hello-world/">October 24th 2018, 9:53:50 am</a>
-            </p><p>更新日期：<a href="http://yoursite.com/2018/10/24/hello-world/">October 28th 2017, 8:39:58 am</a>
+            </p><p>原文链接：<a href="http://yoursite.com/2018/10/24/javascript的数据类型/">http://yoursite.com/2018/10/24/javascript的数据类型/</a>
+            </p><p>发表日期：<a href="http://yoursite.com/2018/10/24/javascript的数据类型/">October 24th 2018, 10:00:53 am</a>
+            </p><p>更新日期：<a href="http://yoursite.com/2018/10/24/javascript的数据类型/">December 4th 2018, 8:32:56 pm</a>
             </p><p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -421,12 +498,17 @@ height:50vh;
         <li class="next">
             
                 <div class="nextSlogan">Next Post</div>
-                <a href="/2018/10/24/开博大吉/" title="开博大吉">
-                    <div class="nextTitle">开博大吉</div>
+                <a href="/2018/10/24/git使用教程/" title="git使用教程">
+                    <div class="nextTitle">git使用教程</div>
                 </a>
             
         </li>
         <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/2018/10/24/开博大吉/" title="开博大吉">
+                    <div class="prevTitle">开博大吉</div>
+                </a>
             
         </li>
     </ul>
@@ -544,7 +626,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#javascript的数据类型"><span class="toc-number">1.</span> <span class="toc-text">javascript的数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#javascript的历史"><span class="toc-number">1.1.</span> <span class="toc-text">javascript的历史</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
